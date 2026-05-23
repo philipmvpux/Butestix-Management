@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hershyl – Baustellen Management leicht gemacht</title>
+    <meta name="description" content="Automatisierte Dokumentation für Baustellen. Stunden, Material, Geräte & Rechnungen ohne Zettelwirtschaft.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <h1>Deine Baustelle dokumentiert sich selbst.</h1>
+            <p class="subtitle">Alle Prozesse – von der Zeiterfassung bis zur Rechnung – funktionieren ohne Papierkram.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToForm()">Zugang anfragen</button>
+                <a href="http://localhost:8501" class="btn-secondary">Zur App</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEM SECTION -->
+    <section class="problem">
+        <div class="container">
+            <h2>Das Problem, das Geld kostet</h2>
+            <div class="grid-2">
+                <div class="problem-item">
+                    <span class="icon">📋</span>
+                    <h3>Chaos auf der Baustelle</h3>
+                    <p>Stunden werden auf Zetteln notiert, Material landet in verschiedenen Listen, niemand weiß mehr, was wirklich passiert ist.</p>
+                </div>
+                <div class="problem-item">
+                    <span class="icon">⏰</span>
+                    <h3>Arbeitszeiten sind unsicher</h3>
+                    <p>Stunden werden vergessen, falsch erfasst oder nach Monaten rekonstruiert. Das kostet Zeit und Genauigkeit.</p>
+                </div>
+                <div class="problem-item">
+                    <span class="icon">💰</span>
+                    <h3>Materialkosten unklar</h3>
+                    <p>Wer hat wann was bestellt? Was wurde verbraucht? Diese Fragen führen zu fehlerhaften Kalkulationen.</p>
+                </div>
+                <div class="problem-item">
+                    <span class="icon">📊</span>
+                    <h3>Berichte funktionieren nicht</h3>
+                    <p>Täglich- und Monatsberichte entstehen manuell, sind fehlerhaft und dauern Stunden zum Erstellen.</p>
+                </div>
+            </div>
+            <p class="problem-conclusion"><strong>Die Konsequenz?</strong> Jeder Tag ohne System kostet dich bares Geld – durch Fehler, verlorene Zeit und falsche Rechnungen.</p>
+        </div>
+    </section>
+
+    <!-- SOLUTION SECTION -->
+    <section class="solution">
+        <div class="container">
+            <h2>So funktioniert es</h2>
+            <div class="grid-3">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Mitarbeiter erfassen</h3>
+                    <p>Dein Team trägt Zeiten, Material und Geräte direkt vor Ort ein. Keine zusätzliche Arbeit.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>System verarbeitet</h3>
+                    <p>Die Daten werden automatisch validiert, berechnet und strukturiert.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Du kontrollierst alles</h3>
+                    <p>Berichte, Rechnungen, Übersichten – alles verfügbar. Du behältst 100% die Kontrolle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AUTOMATION SECTION -->
+    <section class="automation">
+        <div class="container">
+            <h2>Das läuft komplett automatisch</h2>
+            <div class="features">
+                <div class="feature">
+                    <span class="check">✓</span>
+                    <span>Arbeitszeiten erfasst & berechnet</span>
+                </div>
+                <div class="feature">
+                    <span class="check">✓</span>
+                    <span>Materialverbrauch dokumentiert</span>
+                </div>
+                <div class="feature">
+                    <span class="check">✓</span>
+                    <span>Geräteeinsätze tracking</span>
+                </div>
+                <div class="feature">
+                    <span class="check">✓</span>
+                    <span>Tagesberichte generiert</span>
+                </div>
+                <div class="feature">
+                    <span class="check">✓</span>
+                    <span>Rechnungen erstellt</span>
+                </div>
+                <div class="feature">
+                    <span class="check">✓</span>
+                    <span>Monatsübersichten bereit</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TARGET AUDIENCE -->
+    <section class="audience">
+        <div class="container">
+            <h2>Für wen ist Hershyl gemacht?</h2>
+            <p class="audience-intro">Du führst ein Bauunternehmen und kämpfst täglich mit Papierkram statt mit echten Problemen.</p>
+            <div class="audience-list">
+                <div class="audience-item">
+                    <h3>Kleine & mittlere Betriebe</h3>
+                    <p>Von Ein-Mann-Betrieb bis 50+ Mitarbeiter – das System wächst mit dir.</p>
+                </div>
+                <div class="audience-item">
+                    <h3>Alle Baugewerke</h3>
+                    <p>Tiefbau, Straßenbau, Hochbau, Sanierung, Handwerk – egal welche Spezialisierung.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta" id="form-section">
+        <div class="container">
+            <h2>Frühzugang beantragen</h2>
+            <p>Noch nicht offiziell live, aber Bauunternehmer wie du können jetzt schon testen.</p>
+            
+            <form class="form" id="accessForm">
+                <div class="form-group">
+                    <input 
+                        type="text" 
+                        placeholder="Dein Name" 
+                        required
+                        class="form-input"
+                    >
+                </div>
+                <div class="form-group">
+                    <input 
+                        type="text" 
+                        placeholder="Name deiner Firma" 
+                        required
+                        class="form-input"
+                    >
+                </div>
+                <div class="form-group">
+                    <input 
+                        type="email" 
+                        placeholder="Deine E-Mail" 
+                        required
+                        class="form-input"
+                    >
+                </div>
+                <button type="submit" class="btn-primary btn-large">Zugang anfragen</button>
+                <p class="form-info">✓ Keine Spam. Nur Updates zu Hershyl.</p>
+            </form>
+            
+            <div id="successMessage" class="success-message" style="display: none;">
+                <p>✓ Danke! Wir sind in Kontakt mit dir.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Hershyl. Baustellen Management neu gedacht.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
