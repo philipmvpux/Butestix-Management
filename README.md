@@ -27,7 +27,7 @@ PostgreSQL 14 oder neuer
 Optional: PayPal-Developer-Account (nur falls ihr die Bezahlfunktion nutzen wollt)
 1. Projekt einrichten
 bash
-git clone https://github.com/philipmvpux/butestix.git
+git clone https://github.com/philipmvpux/Butestix-Management.git
 cd butestix
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
